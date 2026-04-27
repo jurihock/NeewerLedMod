@@ -30,8 +30,8 @@ Homemade Arduino Nano based driver for the [Neewer BP300](https://neewer.com/pro
 ### MCU
 
 - [Arduino Nano compatible clone](https://www.christians-shop.de/nano-v3-0-atmega328p-development-board-without-soldering-christians-technikshop)
-- VIN between 5V and 12V
-- [Pololu S7V8F5](https://www.pololu.com/product/2123) as possible extension
+- Fittingly VIN between 5V and 12V
+- Otherwise [Pololu S7V8F5](https://www.pololu.com/product/2123)
 
 ### Wiring
 
