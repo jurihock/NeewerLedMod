@@ -862,7 +862,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Diode:BAT46"
+		(symbol "Diode:1N5819"
 			(pin_numbers
 				(hide yes)
 			)
@@ -881,7 +881,7 @@
 					)
 				)
 			)
-			(property "Value" "BAT46"
+			(property "Value" "1N5819"
 				(at 0 -2.54 0)
 				(effects
 					(font
@@ -889,7 +889,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal"
+			(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
 				(at 0 -4.445 0)
 				(effects
 					(font
@@ -898,7 +898,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "http://www.vishay.com/docs/85662/bat46.pdf"
+			(property "Datasheet" "http://www.vishay.com/docs/88525/1n5817.pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -907,7 +907,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "100V 0.15A Small Signal Schottky Diode, DO-35"
+			(property "Description" "40V 1A Schottky Barrier Rectifier Diode, DO-41"
 				(at 0 0 0)
 				(effects
 					(font
@@ -925,7 +925,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "D*DO?35*"
+			(property "ki_fp_filters" "D*DO?41*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -934,7 +934,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "BAT46_0_1"
+			(symbol "1N5819_0_1"
 				(polyline
 					(pts
 						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
@@ -972,7 +972,7 @@
 					)
 				)
 			)
-			(symbol "BAT46_1_1"
+			(symbol "1N5819_1_1"
 				(pin passive line
 					(at -3.81 0 0)
 					(length 2.54)
@@ -2617,12 +2617,6 @@
 		(uuid "057cb03c-995f-4a90-8a31-8519c6180800")
 	)
 	(junction
-		(at 154.94 55.88)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0e319955-4f0a-43a2-8bef-56aa69612f42")
-	)
-	(junction
 		(at 185.42 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2665,12 +2659,6 @@
 		(uuid "2354c953-24d9-4bd0-912d-dd5f3a84c457")
 	)
 	(junction
-		(at 154.94 132.08)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "44e2d47f-2e3a-4814-b49f-d70b86254074")
-	)
-	(junction
 		(at 165.1 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2689,6 +2677,12 @@
 		(uuid "66b7e1df-2bb0-4292-9965-856cd10e74ca")
 	)
 	(junction
+		(at 185.42 170.18)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "68c4b631-5dd4-4125-b0fb-4989742df39b")
+	)
+	(junction
 		(at 67.31 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2701,16 +2695,16 @@
 		(uuid "74615195-551d-4e33-9858-b0abb505a19b")
 	)
 	(junction
+		(at 185.42 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7e3d7de3-4cea-4a7a-8563-04dc9edfb873")
+	)
+	(junction
 		(at 154.94 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "927c4787-7be8-466e-bd7d-90f103d623c5")
-	)
-	(junction
-		(at 154.94 170.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "959860e7-bc4c-4ac9-8b73-c0784552b591")
 	)
 	(junction
 		(at 165.1 76.2)
@@ -2731,12 +2725,6 @@
 		(uuid "9c3cb38a-8787-4419-b65c-4cba569f24e8")
 	)
 	(junction
-		(at 154.94 93.98)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a21b8760-b540-4f20-966e-f19c3bfc71a3")
-	)
-	(junction
 		(at 154.94 120.65)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2749,10 +2737,22 @@
 		(uuid "cd7795e8-0c94-4977-9ae7-66ba0536ac4b")
 	)
 	(junction
+		(at 185.42 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d3508564-3dc6-4a0e-9921-1e4c3cad5979")
+	)
+	(junction
 		(at 165.1 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dd07ae68-67aa-4541-af97-dfeb354dbbec")
+	)
+	(junction
+		(at 185.42 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e68d5c5a-cb84-49c7-a29f-c69f3ec261c7")
 	)
 	(junction
 		(at 154.94 158.75)
@@ -2777,16 +2777,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f9d00916-d525-4d2f-b6de-f547235ad5c8")
-	)
-	(wire
-		(pts
-			(xy 149.86 72.39) (xy 144.78 72.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "021611e7-76ab-4d97-9486-69dd31e544b2")
 	)
 	(wire
 		(pts
@@ -2820,26 +2810,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 93.98) (xy 154.94 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0722e706-2baf-4f58-9fe6-1c2e24ad8c48")
-	)
-	(wire
-		(pts
-			(xy 165.1 132.08) (xy 185.42 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0a77330f-b7f0-4105-9890-92b01b47ee3a")
-	)
-	(wire
-		(pts
 			(xy 154.94 120.65) (xy 154.94 124.46)
 		)
 		(stroke
@@ -2847,16 +2817,6 @@
 			(type default)
 		)
 		(uuid "0aec5a84-e2f2-45b0-9f43-ebe2cc028f61")
-	)
-	(wire
-		(pts
-			(xy 144.78 72.39) (xy 144.78 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0dc7f0ee-0bfa-4e43-a473-e085830335a8")
 	)
 	(wire
 		(pts
@@ -2880,7 +2840,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 33.02) (xy 139.7 33.02)
+			(xy 139.7 34.29) (xy 149.86 34.29)
 		)
 		(stroke
 			(width 0)
@@ -3030,7 +2990,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 107.95) (xy 139.7 107.95)
+			(xy 139.7 110.49) (xy 149.86 110.49)
 		)
 		(stroke
 			(width 0)
@@ -3080,7 +3040,17 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 68.58) (xy 139.7 71.12)
+			(xy 165.1 55.88) (xy 154.94 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "44187c0f-a3d0-4233-a82c-e6d14a3fc336")
+	)
+	(wire
+		(pts
+			(xy 139.7 68.58) (xy 139.7 72.39)
 		)
 		(stroke
 			(width 0)
@@ -3110,7 +3080,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 106.68) (xy 139.7 107.95)
+			(xy 139.7 106.68) (xy 139.7 110.49)
 		)
 		(stroke
 			(width 0)
@@ -3127,6 +3097,16 @@
 			(type default)
 		)
 		(uuid "4bf92d61-c92d-4561-9612-f829965fbc93")
+	)
+	(wire
+		(pts
+			(xy 185.42 58.42) (xy 185.42 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d0ccb20-be60-4e50-9116-b86fa90b7bbc")
 	)
 	(wire
 		(pts
@@ -3230,16 +3210,6 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 110.49) (xy 144.78 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5df7d572-a3c1-44f0-b565-4d0724afbbcf")
-	)
-	(wire
-		(pts
 			(xy 242.57 52.07) (xy 242.57 54.61)
 		)
 		(stroke
@@ -3260,7 +3230,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 71.12) (xy 144.78 71.12)
+			(xy 139.7 72.39) (xy 149.86 72.39)
 		)
 		(stroke
 			(width 0)
@@ -3277,26 +3247,6 @@
 			(type default)
 		)
 		(uuid "61efb612-6f90-49a9-9763-def604dd2580")
-	)
-	(wire
-		(pts
-			(xy 149.86 148.59) (xy 146.05 148.59)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "62cf7f39-cf69-4768-9580-3bf42d46d402")
-	)
-	(wire
-		(pts
-			(xy 149.86 34.29) (xy 146.05 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "63e2ecbe-fe9e-466a-8a1f-fb9845fa49c5")
 	)
 	(wire
 		(pts
@@ -3320,7 +3270,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 30.48) (xy 139.7 33.02)
+			(xy 139.7 30.48) (xy 139.7 34.29)
 		)
 		(stroke
 			(width 0)
@@ -3370,23 +3320,23 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 132.08) (xy 154.94 132.08)
+			(xy 185.42 96.52) (xy 185.42 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "749f9e7f-9096-4c39-bcbf-69b6afca3199")
+	)
+	(wire
+		(pts
+			(xy 185.42 132.08) (xy 165.1 132.08)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "798761e7-85c2-4b3d-87e6-04cae09ea4d4")
-	)
-	(wire
-		(pts
-			(xy 144.78 110.49) (xy 144.78 107.95)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7c16007a-4b54-42ad-8f2b-a84543439c88")
 	)
 	(wire
 		(pts
@@ -3480,6 +3430,16 @@
 	)
 	(wire
 		(pts
+			(xy 185.42 134.62) (xy 185.42 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "909489d8-bb95-4c60-bbfb-4cbf024c12cf")
+	)
+	(wire
+		(pts
 			(xy 67.31 73.66) (xy 67.31 74.93)
 		)
 		(stroke
@@ -3527,16 +3487,6 @@
 			(type default)
 		)
 		(uuid "a2d0e2e4-9786-425d-b1a8-d846f86294fa")
-	)
-	(wire
-		(pts
-			(xy 154.94 55.88) (xy 165.1 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a494e180-1539-4ff2-a78c-7e3b9519f5fc")
 	)
 	(wire
 		(pts
@@ -3620,16 +3570,6 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 34.29) (xy 146.05 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b9459bfc-6cf4-44de-9180-82007667129f")
-	)
-	(wire
-		(pts
 			(xy 165.1 144.78) (xy 165.1 148.59)
 		)
 		(stroke
@@ -3647,6 +3587,16 @@
 			(type default)
 		)
 		(uuid "bc1757b5-8d9b-4be9-842c-d77da9f99f9f")
+	)
+	(wire
+		(pts
+			(xy 185.42 172.72) (xy 185.42 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc5a5b91-1c33-4a91-abfb-66fa1f36175b")
 	)
 	(wire
 		(pts
@@ -3710,26 +3660,6 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 148.59) (xy 146.05 147.32)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c46ae642-0e0b-46c1-b294-30f60dfbba26")
-	)
-	(wire
-		(pts
-			(xy 139.7 55.88) (xy 154.94 55.88)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c5fc50c1-b612-4ee1-bc08-deb08c488de5")
-	)
-	(wire
-		(pts
 			(xy 44.45 109.22) (xy 44.45 50.8)
 		)
 		(stroke
@@ -3770,7 +3700,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 144.78) (xy 139.7 147.32)
+			(xy 139.7 144.78) (xy 139.7 148.59)
 		)
 		(stroke
 			(width 0)
@@ -3837,16 +3767,6 @@
 			(type default)
 		)
 		(uuid "de6a48db-9ab1-4d0f-b285-9e91445655fb")
-	)
-	(wire
-		(pts
-			(xy 139.7 170.18) (xy 154.94 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e220a9a4-df22-4d77-8412-a19cede7fa74")
 	)
 	(wire
 		(pts
@@ -3960,7 +3880,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 147.32) (xy 139.7 147.32)
+			(xy 139.7 148.59) (xy 149.86 148.59)
 		)
 		(stroke
 			(width 0)
@@ -4058,7 +3978,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 139.7 55.88 0)
+		(at 185.42 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4067,7 +3987,7 @@
 		(fields_autoplaced yes)
 		(uuid "0209a1e4-3e2f-43f4-afcb-cd9456165ebb")
 		(property "Reference" "#PWR01"
-			(at 139.7 62.23 0)
+			(at 185.42 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4076,7 +3996,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.7 60.96 0)
+			(at 185.42 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4084,7 +4004,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 55.88 0)
+			(at 185.42 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4093,7 +4013,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 55.88 0)
+			(at 185.42 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4102,7 +4022,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 139.7 55.88 0)
+			(at 185.42 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4117,74 +4037,6 @@
 			(project ""
 				(path "/d76fbb47-4c1f-45ce-bfa4-3d4f9495f329"
 					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:BAT46")
-		(at 153.67 148.59 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "044dac97-8102-428a-ba4f-c5c07fb138bc")
-		(property "Reference" "D4"
-			(at 153.3525 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BAT46"
-			(at 153.3525 144.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_KathodeUp"
-			(at 153.67 153.035 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/85662/bat46.pdf"
-			(at 153.67 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "100V 0.15A Small Signal Schottky Diode, DO-35"
-			(at 153.67 148.59 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ac6622c8-1fc8-4294-98bc-63261305a1bf")
-		)
-		(pin "1"
-			(uuid "7c4f96ae-4322-4057-9828-f48c1b1358df")
-		)
-		(instances
-			(project "Neewer"
-				(path "/d76fbb47-4c1f-45ce-bfa4-3d4f9495f329"
-					(reference "D4")
 					(unit 1)
 				)
 			)
@@ -4251,6 +4103,74 @@
 			(project "Neewer"
 				(path "/d76fbb47-4c1f-45ce-bfa4-3d4f9495f329"
 					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:1N5819")
+		(at 153.67 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09bb6380-cfd5-4bee-9cc4-b62830c216e9")
+		(property "Reference" "D2"
+			(at 153.3525 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N5819"
+			(at 153.3525 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P5.08mm_Vertical_AnodeUp"
+			(at 153.67 76.835 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88525/1n5817.pdf"
+			(at 153.67 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40V 1A Schottky Barrier Rectifier Diode, DO-41"
+			(at 153.67 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d3d5241e-6a27-408f-ad0c-88e62a3293af")
+		)
+		(pin "1"
+			(uuid "86d75937-ad07-4d21-9653-083056de48db")
+		)
+		(instances
+			(project "Neewer"
+				(path "/d76fbb47-4c1f-45ce-bfa4-3d4f9495f329"
+					(reference "D2")
 					(unit 1)
 				)
 			)
@@ -4613,7 +4533,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 139.7 93.98 0)
+		(at 185.42 96.52 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4622,7 +4542,7 @@
 		(fields_autoplaced yes)
 		(uuid "1d5281f0-a5d5-4a1c-bd58-0daa3747a152")
 		(property "Reference" "#PWR02"
-			(at 139.7 100.33 0)
+			(at 185.42 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4631,7 +4551,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.7 99.06 0)
+			(at 185.42 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4639,7 +4559,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 93.98 0)
+			(at 185.42 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4648,7 +4568,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 93.98 0)
+			(at 185.42 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4657,7 +4577,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 139.7 93.98 0)
+			(at 185.42 96.52 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4749,7 +4669,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 139.7 170.18 0)
+		(at 185.42 172.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4758,7 +4678,7 @@
 		(fields_autoplaced yes)
 		(uuid "251f4af7-be24-42f1-8245-e059045b1eb5")
 		(property "Reference" "#PWR04"
-			(at 139.7 176.53 0)
+			(at 185.42 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4767,7 +4687,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.7 175.26 0)
+			(at 185.42 177.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4775,7 +4695,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 170.18 0)
+			(at 185.42 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4784,7 +4704,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 170.18 0)
+			(at 185.42 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4793,7 +4713,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 139.7 170.18 0)
+			(at 185.42 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5020,6 +4940,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N5819")
+		(at 153.67 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3b09d38a-bc97-4089-8f2d-11028baee5cd")
+		(property "Reference" "D1"
+			(at 153.3525 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N5819"
+			(at 153.3525 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P5.08mm_Vertical_AnodeUp"
+			(at 153.67 38.735 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88525/1n5817.pdf"
+			(at 153.67 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40V 1A Schottky Barrier Rectifier Diode, DO-41"
+			(at 153.67 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "bf8888b9-c7ad-49d2-a521-607f3bb78e2d")
+		)
+		(pin "1"
+			(uuid "cdfb5727-b0a8-4425-bdb9-0404ddc7f469")
+		)
+		(instances
+			(project "Neewer"
+				(path "/d76fbb47-4c1f-45ce-bfa4-3d4f9495f329"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 67.31 60.96 0)
 		(unit 1)
@@ -5227,42 +5215,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:BAT46")
-		(at 153.67 34.29 0)
+		(lib_id "Diode:1N5819")
+		(at 153.67 110.49 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4f5dfb41-1d86-48aa-9ba7-25e6bddcb5bb")
-		(property "Reference" "D1"
-			(at 153.3525 27.94 0)
+		(uuid "4c81b029-ce6f-4fc1-a2ca-ef2d20f31697")
+		(property "Reference" "D3"
+			(at 153.3525 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "BAT46"
-			(at 153.3525 30.48 0)
+		(property "Value" "1N5819"
+			(at 153.3525 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_KathodeUp"
-			(at 153.67 38.735 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/85662/bat46.pdf"
-			(at 153.67 34.29 0)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P5.08mm_Vertical_AnodeUp"
+			(at 153.67 114.935 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5270,8 +5249,17 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "100V 0.15A Small Signal Schottky Diode, DO-35"
-			(at 153.67 34.29 0)
+		(property "Datasheet" "http://www.vishay.com/docs/88525/1n5817.pdf"
+			(at 153.67 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40V 1A Schottky Barrier Rectifier Diode, DO-41"
+			(at 153.67 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5280,15 +5268,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "ef949e86-d421-4044-adaa-745f70e269db")
+			(uuid "70658fa0-3d49-424e-9e9c-71f56f62b6ff")
 		)
 		(pin "1"
-			(uuid "c52980ac-fba9-446e-8f10-0fc078f3e546")
+			(uuid "0d232b3c-5492-42f6-8270-58769b33fd7b")
 		)
 		(instances
-			(project ""
+			(project "Neewer"
 				(path "/d76fbb47-4c1f-45ce-bfa4-3d4f9495f329"
-					(reference "D1")
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -5561,74 +5549,6 @@
 			(project ""
 				(path "/d76fbb47-4c1f-45ce-bfa4-3d4f9495f329"
 					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:BAT46")
-		(at 153.67 110.49 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "774a829f-e632-4b8e-a1cc-e41dc501038c")
-		(property "Reference" "D3"
-			(at 153.3525 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BAT46"
-			(at 153.3525 106.68 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_KathodeUp"
-			(at 153.67 114.935 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/85662/bat46.pdf"
-			(at 153.67 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "100V 0.15A Small Signal Schottky Diode, DO-35"
-			(at 153.67 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "9b3d6a04-8654-43f7-811d-98f4ddd474c8")
-		)
-		(pin "1"
-			(uuid "8a69e4d5-a35d-4dfe-b992-eaa70aa695f7")
-		)
-		(instances
-			(project "Neewer"
-				(path "/d76fbb47-4c1f-45ce-bfa4-3d4f9495f329"
-					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -5919,74 +5839,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:BAT46")
-		(at 153.67 72.39 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a2c6d836-7eda-4df2-8806-358b52aba224")
-		(property "Reference" "D2"
-			(at 153.3525 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BAT46"
-			(at 153.3525 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_KathodeUp"
-			(at 153.67 76.835 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/85662/bat46.pdf"
-			(at 153.67 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "100V 0.15A Small Signal Schottky Diode, DO-35"
-			(at 153.67 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b6083a80-6f91-4364-8e9b-7d37e52a4d88")
-		)
-		(pin "1"
-			(uuid "e8696f61-d21c-47af-a2e0-406939ccb593")
-		)
-		(instances
-			(project "Neewer"
-				(path "/d76fbb47-4c1f-45ce-bfa4-3d4f9495f329"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "MCU_Module:Arduino_Nano_v3.x")
 		(at 69.85 101.6 0)
 		(unit 1)
@@ -6237,7 +6089,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
+		(property "Footprint" "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal"
 			(at 148.59 46.228 90)
 			(effects
 				(font
@@ -6837,8 +6689,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Diode:1N5819")
+		(at 153.67 148.59 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e5d1ac78-6ad5-4def-ac18-a1a87d3551fc")
+		(property "Reference" "D4"
+			(at 153.3525 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1N5819"
+			(at 153.3525 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P5.08mm_Vertical_AnodeUp"
+			(at 153.67 153.035 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88525/1n5817.pdf"
+			(at 153.67 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "40V 1A Schottky Barrier Rectifier Diode, DO-41"
+			(at 153.67 148.59 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "716ccd6d-4c86-4577-a483-3986be95cefc")
+		)
+		(pin "1"
+			(uuid "d863f895-6f55-40ed-94e0-9dc688b31446")
+		)
+		(instances
+			(project "Neewer"
+				(path "/d76fbb47-4c1f-45ce-bfa4-3d4f9495f329"
+					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
-		(at 139.7 132.08 0)
+		(at 185.42 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -6847,7 +6767,7 @@
 		(fields_autoplaced yes)
 		(uuid "e87131a9-d0df-4dd2-b1f8-66f2c294f786")
 		(property "Reference" "#PWR03"
-			(at 139.7 138.43 0)
+			(at 185.42 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6856,7 +6776,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 139.7 137.16 0)
+			(at 185.42 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6864,7 +6784,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 139.7 132.08 0)
+			(at 185.42 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6873,7 +6793,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 139.7 132.08 0)
+			(at 185.42 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6882,7 +6802,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 139.7 132.08 0)
+			(at 185.42 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)

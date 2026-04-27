@@ -274,6 +274,185 @@
 			)
 		)
 	)
+	(footprint "Diode_THT:D_DO-41_SOD81_P5.08mm_Vertical_AnodeUp"
+		(layer "F.Cu")
+		(uuid "04e88173-5be5-4f0d-9f1b-92e54239d8dd")
+		(at 88.9 53.34)
+		(descr "Diode, DO-41_SOD81 series, Axial, Vertical, pin pitch=5.08mm, length*diameter=5.2*2.7mm^2, https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf")
+		(tags "Diode DO-41_SOD81 series Axial Vertical pin pitch 5.08mm  length 5.2mm diameter 2.7mm")
+		(property "Reference" "D2"
+			(at 2.54 -2.750635 0)
+			(layer "F.SilkS")
+			(uuid "c9fcaeb4-58b7-401f-b38b-e528f0c5c459")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "1N5819"
+			(at 2.54 2.750635 0)
+			(layer "F.Fab")
+			(uuid "fc290274-0c2e-47bd-9786-c6d0dc4f4f4c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88525/1n5817.pdf"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f547d41b-7e0a-4a7a-985a-49116eae8941")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "40V 1A Schottky Barrier Rectifier Diode, DO-41"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cde274cf-3a0a-4ffc-b6ec-6dc8aa27120a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "D*DO?41*")
+		(path "/09bb6380-cfd5-4bee-9cc4-b62830c216e9")
+		(sheetname "/")
+		(sheetfile "Neewer.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start 1.750635 0)
+			(end 3.68 0)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "1b8fba39-b5a3-4169-8714-b6ffd1813183")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.750635 0)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "cfdc65ae-7c6a-4e07-b33b-37b073f269ec")
+		)
+		(fp_rect
+			(start -1.6 -1.6)
+			(end 6.43 1.6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "f362dd14-369e-492e-8ce8-e6b7536ba05e")
+		)
+		(fp_line
+			(start 0 0)
+			(end 5.08 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "51ac916e-7e2d-4574-a7ee-66fc58effe87")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.35 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "999f48fc-4953-4b6e-8ea0-8e12db8f17df")
+		)
+		(fp_text user "A"
+			(at 3.28 1.1 0)
+			(layer "F.SilkS")
+			(uuid "42f736be-1089-462d-b8b6-251895868a5f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "${REFERENCE}"
+			(at 2.54 -2.750635 0)
+			(layer "F.Fab")
+			(uuid "9c2f859d-09ce-4024-9773-f6f491d78024")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "A"
+			(at 3.28 1.1 0)
+			(layer "F.Fab")
+			(uuid "cf9698f9-b1aa-4563-af59-2e8935edff87")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole roundrect
+			(at 0 0)
+			(size 2.2 2.2)
+			(drill 1.1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(roundrect_rratio 0.113636)
+			(net 28 "VCC")
+			(pinfunction "K")
+			(pintype "passive")
+			(uuid "db1c63d0-697d-490c-89e4-66bea65597e6")
+		)
+		(pad "2" thru_hole circle
+			(at 5.08 0)
+			(size 2.2 2.2)
+			(drill 1.1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 31 "PWM2")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "b8dda7c9-021b-4fcf-8d06-f9286cc8eab0")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Diode_THT.3dshapes/D_DO-41_SOD81_P5.08mm_Vertical_AnodeUp.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "TerminalBlock_MetzConnect:TerminalBlock_MetzConnect_Type055_RT01503HDWU_1x03_P5.00mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "1a4eba0c-2491-4e75-b4d9-153703391e76")
@@ -663,6 +842,185 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/TerminalBlock_MetzConnect.3dshapes/TerminalBlock_MetzConnect_Type055_RT01503HDWU_1x03_P5.00mm_Horizontal.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "Diode_THT:D_DO-41_SOD81_P5.08mm_Vertical_AnodeUp"
+		(layer "F.Cu")
+		(uuid "1d00100c-99d3-4037-96e3-f12221d92a44")
+		(at 114.3 53.34)
+		(descr "Diode, DO-41_SOD81 series, Axial, Vertical, pin pitch=5.08mm, length*diameter=5.2*2.7mm^2, https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf")
+		(tags "Diode DO-41_SOD81 series Axial Vertical pin pitch 5.08mm  length 5.2mm diameter 2.7mm")
+		(property "Reference" "D4"
+			(at 2.54 -2.750635 0)
+			(layer "F.SilkS")
+			(uuid "9e3ed6e4-45a9-4992-b55e-95531f443ff1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "1N5819"
+			(at 2.54 2.750635 0)
+			(layer "F.Fab")
+			(uuid "5d81e749-51de-470e-93ee-010bd6275bff")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88525/1n5817.pdf"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3427d4ed-964e-4620-9434-e63c9416cbde")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "40V 1A Schottky Barrier Rectifier Diode, DO-41"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "49604ba1-02ab-49d1-bdc7-83b7a36543c6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "D*DO?41*")
+		(path "/e5d1ac78-6ad5-4def-ac18-a1a87d3551fc")
+		(sheetname "/")
+		(sheetfile "Neewer.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start 1.750635 0)
+			(end 3.68 0)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "0545a99a-c1ef-4931-892c-db0a5c1d9c98")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.750635 0)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "5eb7b993-f14d-47d9-8786-e85a9720c9d9")
+		)
+		(fp_rect
+			(start -1.6 -1.6)
+			(end 6.43 1.6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "edab6297-7fd0-4d3b-8629-272b932b34d6")
+		)
+		(fp_line
+			(start 0 0)
+			(end 5.08 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "b1149f09-d830-4b00-8af7-e78b135f3a9c")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.35 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "f9e0c4cd-0eb5-4b5b-9c19-9b9f132733d9")
+		)
+		(fp_text user "A"
+			(at 3.28 1.1 0)
+			(layer "F.SilkS")
+			(uuid "07657b29-3489-4e41-91f8-8f6cca46a831")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "A"
+			(at 3.28 1.1 0)
+			(layer "F.Fab")
+			(uuid "3cd2419e-9604-4d5f-afb2-3ae1967091a1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "${REFERENCE}"
+			(at 2.54 -2.750635 0)
+			(layer "F.Fab")
+			(uuid "afe65e9b-3fc8-40e1-855d-9c4e189d00f3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole roundrect
+			(at 0 0)
+			(size 2.2 2.2)
+			(drill 1.1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(roundrect_rratio 0.113636)
+			(net 28 "VCC")
+			(pinfunction "K")
+			(pintype "passive")
+			(uuid "710a6004-5751-4bc7-a3f4-c758d8f66c71")
+		)
+		(pad "2" thru_hole circle
+			(at 5.08 0)
+			(size 2.2 2.2)
+			(drill 1.1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 34 "PWM4")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "fd2624ef-efae-4602-b149-d5e2816f93b1")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Diode_THT.3dshapes/D_DO-41_SOD81_P5.08mm_Vertical_AnodeUp.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -1777,6 +2135,185 @@
 			)
 		)
 	)
+	(footprint "Diode_THT:D_DO-41_SOD81_P5.08mm_Vertical_AnodeUp"
+		(layer "F.Cu")
+		(uuid "4f9d64da-9141-4fe5-a540-8c5ecbcc921f")
+		(at 86.36 53.34 180)
+		(descr "Diode, DO-41_SOD81 series, Axial, Vertical, pin pitch=5.08mm, length*diameter=5.2*2.7mm^2, https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf")
+		(tags "Diode DO-41_SOD81 series Axial Vertical pin pitch 5.08mm  length 5.2mm diameter 2.7mm")
+		(property "Reference" "D1"
+			(at 2.54 -2.750635 0)
+			(layer "F.SilkS")
+			(uuid "99788bea-0c30-414e-936b-5e957e50a0d2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "1N5819"
+			(at 2.54 2.750635 0)
+			(layer "F.Fab")
+			(uuid "fa6c5eea-2fc2-4e8a-9715-de8ede630c34")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88525/1n5817.pdf"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "49a9f35c-9b6a-4605-8140-ded7ebce97c8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "40V 1A Schottky Barrier Rectifier Diode, DO-41"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7bcd332d-a81b-4bc6-9526-7399e72da0d6")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "D*DO?41*")
+		(path "/3b09d38a-bc97-4089-8f2d-11028baee5cd")
+		(sheetname "/")
+		(sheetfile "Neewer.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start 1.750635 0)
+			(end 3.68 0)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "096d03e9-588e-4a71-b737-87d866b13d16")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.750635 0)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "97f0e207-a6bf-40f3-b299-265c9edc426e")
+		)
+		(fp_rect
+			(start -1.6 -1.6)
+			(end 6.43 1.6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "f6b4d4d7-300d-4a0e-a00b-e7c9e6df5179")
+		)
+		(fp_line
+			(start 0 0)
+			(end 5.08 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "f4b08b1f-5f64-400a-b6a3-28e0bb92e313")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.35 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "90b739d1-953d-4f9a-a5a3-4e974cb34d8c")
+		)
+		(fp_text user "A"
+			(at 3.28 1.1 0)
+			(layer "F.SilkS")
+			(uuid "c9be287e-9b69-4a11-9d23-8129ce7de0c9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "${REFERENCE}"
+			(at 2.54 -2.750635 0)
+			(layer "F.Fab")
+			(uuid "368243f9-bf1a-4abc-850a-2a9064528544")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "A"
+			(at 3.28 1.1 0)
+			(layer "F.Fab")
+			(uuid "7431c113-93f8-4315-bef0-1391d7decdc8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole roundrect
+			(at 0 0 180)
+			(size 2.2 2.2)
+			(drill 1.1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(roundrect_rratio 0.113636)
+			(net 28 "VCC")
+			(pinfunction "K")
+			(pintype "passive")
+			(uuid "e7e6ffe8-33fc-4f60-adac-6b27ab7df98f")
+		)
+		(pad "2" thru_hole circle
+			(at 5.08 0 180)
+			(size 2.2 2.2)
+			(drill 1.1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 30 "PWM1")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "7fd21fdf-2ddb-4256-9c47-7f2d67ef8072")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Diode_THT.3dshapes/D_DO-41_SOD81_P5.08mm_Vertical_AnodeUp.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P15.24mm_Horizontal"
 		(layer "F.Cu")
 		(uuid "554d902d-f478-4956-803e-fbb724a0dec6")
@@ -2830,185 +3367,6 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Module.3dshapes/Arduino_Nano_WithMountingHoles.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_KathodeUp"
-		(layer "F.Cu")
-		(uuid "62847308-4221-476a-a945-6168fc84a32c")
-		(at 88.9 53.34)
-		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, length*diameter=4*2mm^2, http://www.diodes.com/_files/packages/DO-35.pdf")
-		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
-		(property "Reference" "D2"
-			(at 1.27 -2.326371 0)
-			(layer "F.SilkS")
-			(uuid "79a8cd61-609a-4e6a-9a4a-43d43958e105")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "BAT46"
-			(at 1.27 3.215371 0)
-			(layer "F.Fab")
-			(uuid "39acb299-3089-43d4-8c4b-57be6b8b844b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/85662/bat46.pdf"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "82eb5cdc-4d88-43ab-9269-2e3a2325c028")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "100V 0.15A Small Signal Schottky Diode, DO-35"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "9715a8b7-0dee-401e-83f5-cae932487888")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "D*DO?35*")
-		(path "/a2c6d836-7eda-4df2-8806-358b52aba224")
-		(sheetname "/")
-		(sheetfile "Neewer.kicad_sch")
-		(attr through_hole)
-		(fp_line
-			(start 1.213629 0)
-			(end 1.1 0)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "465b3170-3f80-4948-a351-b272f61161a9")
-		)
-		(fp_circle
-			(center 2.54 0)
-			(end 3.866371 0)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.SilkS")
-			(uuid "21877bb0-b6c8-4eb1-b9b5-db6b8e485ca0")
-		)
-		(fp_rect
-			(start -1.05 -1.25)
-			(end 3.79 1.25)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.CrtYd")
-			(uuid "422e83c5-342e-43a4-9bd5-c0344fec2ad0")
-		)
-		(fp_line
-			(start 0 0)
-			(end 2.54 0)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "0540659d-d514-4781-ad76-e236ef33d7fc")
-		)
-		(fp_circle
-			(center 2.54 0)
-			(end 3.54 0)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.Fab")
-			(uuid "6cdfa44f-3285-4094-9d3a-2539b01abe56")
-		)
-		(fp_text user "K"
-			(at -1.8 0 0)
-			(layer "F.SilkS")
-			(uuid "4c6e479c-633b-4c6e-9423-5324a182022a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(fp_text user "${REFERENCE}"
-			(at 1.27 -2.326371 0)
-			(layer "F.Fab")
-			(uuid "1b8a849f-827c-4cf3-87ad-0ef489bc9fc1")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(fp_text user "K"
-			(at -1.8 0 0)
-			(layer "F.Fab")
-			(uuid "8f8e6fbc-a876-4fad-8505-9f192e559739")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" thru_hole roundrect
-			(at 0 0)
-			(size 1.6 1.6)
-			(drill 0.8)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(roundrect_rratio 0.15625)
-			(net 28 "VCC")
-			(pinfunction "K")
-			(pintype "passive")
-			(uuid "6dc7fc6d-4fb4-4a4d-8ad4-235ede1af4e6")
-		)
-		(pad "2" thru_hole circle
-			(at 2.54 0)
-			(size 1.6 1.6)
-			(drill 0.8)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 31 "PWM2")
-			(pinfunction "A")
-			(pintype "passive")
-			(uuid "5e255abf-3dcf-486b-9935-4546ec115c45")
-		)
-		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Diode_THT.3dshapes/D_DO-35_SOD27_P2.54mm_Vertical_KathodeUp.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -4127,6 +4485,185 @@
 			)
 		)
 	)
+	(footprint "Diode_THT:D_DO-41_SOD81_P5.08mm_Vertical_AnodeUp"
+		(layer "F.Cu")
+		(uuid "8022e6dc-0703-4b39-8228-5021a227f5a1")
+		(at 111.76 53.34 180)
+		(descr "Diode, DO-41_SOD81 series, Axial, Vertical, pin pitch=5.08mm, length*diameter=5.2*2.7mm^2, https://www.diodes.com/assets/Package-Files/DO-41-Plastic.pdf")
+		(tags "Diode DO-41_SOD81 series Axial Vertical pin pitch 5.08mm  length 5.2mm diameter 2.7mm")
+		(property "Reference" "D3"
+			(at 2.54 -2.750635 0)
+			(layer "F.SilkS")
+			(uuid "452b8b97-6659-416c-abdb-e9489c6c3b18")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "1N5819"
+			(at 2.54 2.750635 0)
+			(layer "F.Fab")
+			(uuid "a9d9da2b-77a8-47a3-a942-acbf3eb1275e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.vishay.com/docs/88525/1n5817.pdf"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "72237819-ef41-4543-90d6-6b17da3ee448")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "40V 1A Schottky Barrier Rectifier Diode, DO-41"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e0096568-8381-45bb-a2cf-73775bd31bc1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "D*DO?41*")
+		(path "/4c81b029-ce6f-4fc1-a2ca-ef2d20f31697")
+		(sheetname "/")
+		(sheetfile "Neewer.kicad_sch")
+		(attr through_hole)
+		(fp_line
+			(start 1.750635 0)
+			(end 3.68 0)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "fbf11755-f6fe-4964-90f2-f8f56e5b22ef")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.750635 0)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "5236ba26-b538-4b6d-940e-d0301f353e17")
+		)
+		(fp_rect
+			(start -1.6 -1.6)
+			(end 6.43 1.6)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "311d960f-3ab7-4814-b827-7975a05faa5b")
+		)
+		(fp_line
+			(start 0 0)
+			(end 5.08 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "0f9b3a45-dad3-48be-8895-63f09492f164")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.35 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "3b425bce-8a45-467b-8fc3-522827cb1271")
+		)
+		(fp_text user "A"
+			(at 3.28 1.1 0)
+			(layer "F.SilkS")
+			(uuid "857cc326-dfa1-4711-a15c-d69b0cfe0d77")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "${REFERENCE}"
+			(at 2.54 -2.750635 0)
+			(layer "F.Fab")
+			(uuid "91bff04b-6513-4924-9d58-77acbf25c29a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(fp_text user "A"
+			(at 3.28 1.1 0)
+			(layer "F.Fab")
+			(uuid "b49acacc-052a-4b5c-b6f6-221a28d363d3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole roundrect
+			(at 0 0 180)
+			(size 2.2 2.2)
+			(drill 1.1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(roundrect_rratio 0.113636)
+			(net 28 "VCC")
+			(pinfunction "K")
+			(pintype "passive")
+			(uuid "3b845cbb-47c4-4e32-8e31-d31516418eca")
+		)
+		(pad "2" thru_hole circle
+			(at 5.08 0 180)
+			(size 2.2 2.2)
+			(drill 1.1)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 32 "PWM3")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "e529d596-6969-4619-b822-779c0f3df699")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Diode_THT.3dshapes/D_DO-41_SOD81_P5.08mm_Vertical_AnodeUp.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
 	(footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P2.54mm_Vertical"
 		(layer "F.Cu")
 		(uuid "84a75a56-2689-488a-82cc-744a56ac67dc")
@@ -4598,185 +5135,6 @@
 			)
 		)
 	)
-	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_KathodeUp"
-		(layer "F.Cu")
-		(uuid "9576ca60-c4d3-4829-a995-007aed004797")
-		(at 86.36 53.34 180)
-		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, length*diameter=4*2mm^2, http://www.diodes.com/_files/packages/DO-35.pdf")
-		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
-		(property "Reference" "D1"
-			(at 1.27 -2.326371 0)
-			(layer "F.SilkS")
-			(uuid "3605fc77-bb4f-4570-b8a8-921b2c393652")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "BAT46"
-			(at 1.27 3.215371 0)
-			(layer "F.Fab")
-			(uuid "0f8cf792-5e43-4eef-b8ab-0cb482b0e0fe")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/85662/bat46.pdf"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "f4a6d7b2-6277-4610-bbef-8883b45adf5e")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "100V 0.15A Small Signal Schottky Diode, DO-35"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "183ac8cf-489b-4400-bec1-abd73062cb3e")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "D*DO?35*")
-		(path "/4f5dfb41-1d86-48aa-9ba7-25e6bddcb5bb")
-		(sheetname "/")
-		(sheetfile "Neewer.kicad_sch")
-		(attr through_hole)
-		(fp_line
-			(start 1.213629 0)
-			(end 1.1 0)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "6195f895-28d2-4dd4-a07e-2c45f9c74d7b")
-		)
-		(fp_circle
-			(center 2.54 0)
-			(end 3.866371 0)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.SilkS")
-			(uuid "a7b1aa37-73b4-4dc9-83c0-478985618f4e")
-		)
-		(fp_rect
-			(start -1.05 -1.25)
-			(end 3.79 1.25)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.CrtYd")
-			(uuid "a9ad01f4-f07f-40ee-98bd-1ae3a633e1a3")
-		)
-		(fp_line
-			(start 0 0)
-			(end 2.54 0)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "2acce54c-2c88-475a-bf12-b15b98272b66")
-		)
-		(fp_circle
-			(center 2.54 0)
-			(end 3.54 0)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.Fab")
-			(uuid "38901300-1ce0-494c-8f31-7b6a77094cab")
-		)
-		(fp_text user "K"
-			(at -1.8 0 0)
-			(layer "F.SilkS")
-			(uuid "ca42d253-3b3e-4f57-a7a1-a6a162e07f22")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(fp_text user "K"
-			(at -1.8 0 0)
-			(layer "F.Fab")
-			(uuid "338d333f-f41e-4b6b-9ca5-96a136d56d05")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(fp_text user "${REFERENCE}"
-			(at 1.27 -2.326371 0)
-			(layer "F.Fab")
-			(uuid "b17cdf12-de12-47f0-a2ce-3477c04f37e5")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" thru_hole roundrect
-			(at 0 0 180)
-			(size 1.6 1.6)
-			(drill 0.8)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(roundrect_rratio 0.15625)
-			(net 28 "VCC")
-			(pinfunction "K")
-			(pintype "passive")
-			(uuid "88501264-54c7-4bf7-80ec-005c0c565891")
-		)
-		(pad "2" thru_hole circle
-			(at 2.54 0 180)
-			(size 1.6 1.6)
-			(drill 0.8)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 30 "PWM1")
-			(pinfunction "A")
-			(pintype "passive")
-			(uuid "9193d5dc-f2d6-42c1-b82f-a6456ef4b833")
-		)
-		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Diode_THT.3dshapes/D_DO-35_SOD27_P2.54mm_Vertical_KathodeUp.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
 	(footprint "Package_TO_SOT_THT:TO-220-3_Vertical"
 		(layer "F.Cu")
 		(uuid "a01353eb-962f-435c-abf2-84c81d5affde")
@@ -5002,185 +5360,6 @@
 		)
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Package_TO_SOT_THT.3dshapes/TO-220-3_Vertical.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
-	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_KathodeUp"
-		(layer "F.Cu")
-		(uuid "a586e0de-993f-4614-b0c5-1311c4eb0c97")
-		(at 111.76 53.34 180)
-		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, length*diameter=4*2mm^2, http://www.diodes.com/_files/packages/DO-35.pdf")
-		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
-		(property "Reference" "D3"
-			(at 1.27 -2.326371 0)
-			(layer "F.SilkS")
-			(uuid "44b43f00-aabe-4c0a-8e82-f3d5c941bc41")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "BAT46"
-			(at 1.27 3.215371 0)
-			(layer "F.Fab")
-			(uuid "2d7579be-fe8b-41ae-9a3b-efc5b5b7b6f9")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/85662/bat46.pdf"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "530f285a-48c2-4e4e-b9fc-5257606b8cc6")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "100V 0.15A Small Signal Schottky Diode, DO-35"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "91bd2f1c-6351-4fc7-af66-c8b0965b2095")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "D*DO?35*")
-		(path "/774a829f-e632-4b8e-a1cc-e41dc501038c")
-		(sheetname "/")
-		(sheetfile "Neewer.kicad_sch")
-		(attr through_hole)
-		(fp_line
-			(start 1.213629 0)
-			(end 1.1 0)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "5592a225-88fa-4e85-a12e-b063ff378a5f")
-		)
-		(fp_circle
-			(center 2.54 0)
-			(end 3.866371 0)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.SilkS")
-			(uuid "a7035432-0206-435a-ad9f-732fa9d218e1")
-		)
-		(fp_rect
-			(start -1.05 -1.25)
-			(end 3.79 1.25)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.CrtYd")
-			(uuid "bd1ba820-acce-40eb-9f1f-6d1fe5bf8c8e")
-		)
-		(fp_line
-			(start 0 0)
-			(end 2.54 0)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "70881684-a385-4a0c-9cb6-4a3b16f9f54f")
-		)
-		(fp_circle
-			(center 2.54 0)
-			(end 3.54 0)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.Fab")
-			(uuid "86252a13-dbf6-4a6e-96de-33e46450ce3e")
-		)
-		(fp_text user "K"
-			(at -1.8 0 0)
-			(layer "F.SilkS")
-			(uuid "11e594c5-7da5-4a57-992b-ad2ca2c3cd4d")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(fp_text user "${REFERENCE}"
-			(at 1.27 -2.326371 0)
-			(layer "F.Fab")
-			(uuid "0027be89-6edb-4f0f-bfda-5e25babf912b")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(fp_text user "K"
-			(at -1.8 0 0)
-			(layer "F.Fab")
-			(uuid "e4a68139-8f4b-4a84-8ba8-2b79e932cf04")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" thru_hole roundrect
-			(at 0 0 180)
-			(size 1.6 1.6)
-			(drill 0.8)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(roundrect_rratio 0.15625)
-			(net 28 "VCC")
-			(pinfunction "K")
-			(pintype "passive")
-			(uuid "ea1ab707-3966-471d-ab8f-dd6c77197887")
-		)
-		(pad "2" thru_hole circle
-			(at 2.54 0 180)
-			(size 1.6 1.6)
-			(drill 0.8)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 32 "PWM3")
-			(pinfunction "A")
-			(pintype "passive")
-			(uuid "e80f9201-56b2-4153-8e5e-624737daeb10")
-		)
-		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Diode_THT.3dshapes/D_DO-35_SOD27_P2.54mm_Vertical_KathodeUp.step"
 			(offset
 				(xyz 0 0 0)
 			)
@@ -5420,7 +5599,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "7c1be45b-3f96-49dd-841d-1aed9603c55f")
+			(uuid "fdc0f237-edbd-4701-a432-779b2bc0b357")
 		)
 		(fp_line
 			(start 1.04 0)
@@ -5430,7 +5609,7 @@
 				(type solid)
 			)
 			(layer "F.SilkS")
-			(uuid "17751911-e693-4244-8b35-fb24ccac4fb9")
+			(uuid "318784c2-ace1-4866-be1f-6ad3b8850c1f")
 		)
 		(fp_rect
 			(start 4.35 -1.37)
@@ -5441,7 +5620,7 @@
 			)
 			(fill no)
 			(layer "F.SilkS")
-			(uuid "78a1d1d2-cdbc-4a26-af98-318d7baf3d39")
+			(uuid "889764b3-274f-4d0d-b5d6-8b60a54a96a2")
 		)
 		(fp_rect
 			(start -1.05 -1.5)
@@ -5452,7 +5631,7 @@
 			)
 			(fill no)
 			(layer "F.CrtYd")
-			(uuid "20cb5f28-ce1f-4b56-b8d8-b98dbd89b387")
+			(uuid "79ad1eff-e0ef-4c99-921d-a7383bb345cb")
 		)
 		(fp_line
 			(start 15.24 0)
@@ -5462,7 +5641,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "cf0ed47a-b933-4ba4-aeae-dbdad922ae5f")
+			(uuid "d8690330-de10-4e75-a229-149ea65dbda9")
 		)
 		(fp_line
 			(start 0 0)
@@ -5472,7 +5651,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "e563b8ac-2233-4e0d-8c4e-8003bdb38232")
+			(uuid "4db12203-ffc0-48b4-b824-743b708bcd3c")
 		)
 		(fp_rect
 			(start 4.47 -1.25)
@@ -5483,7 +5662,7 @@
 			)
 			(fill no)
 			(layer "F.Fab")
-			(uuid "7e422c29-6698-4beb-822e-13abfd5376f3")
+			(uuid "4ea6d612-74ee-4487-88c2-357f888933c5")
 		)
 		(fp_text user "${REFERENCE}"
 			(at 7.62 0 90)
@@ -5857,185 +6036,6 @@
 			)
 		)
 	)
-	(footprint "Diode_THT:D_DO-35_SOD27_P2.54mm_Vertical_KathodeUp"
-		(layer "F.Cu")
-		(uuid "c2fed3ce-bcc0-4a1b-912d-9c8102c45dc0")
-		(at 114.3 53.34)
-		(descr "Diode, DO-35_SOD27 series, Axial, Vertical, pin pitch=2.54mm, length*diameter=4*2mm^2, http://www.diodes.com/_files/packages/DO-35.pdf")
-		(tags "Diode DO-35_SOD27 series Axial Vertical pin pitch 2.54mm  length 4mm diameter 2mm")
-		(property "Reference" "D4"
-			(at 1.27 -2.326371 0)
-			(layer "F.SilkS")
-			(uuid "b2c7d962-5c3b-4035-ad80-8896586f900a")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Value" "BAT46"
-			(at 1.27 3.215371 0)
-			(layer "F.Fab")
-			(uuid "157298d0-e686-485b-b0be-545c3f248841")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/85662/bat46.pdf"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "1be83fe7-7981-4368-b869-a08f6ac56819")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property "Description" "100V 0.15A Small Signal Schottky Diode, DO-35"
-			(at 0 0 0)
-			(layer "F.Fab")
-			(hide yes)
-			(uuid "236db50d-8c96-46d2-9783-f0de3352c386")
-			(effects
-				(font
-					(size 1.27 1.27)
-					(thickness 0.15)
-				)
-			)
-		)
-		(property ki_fp_filters "D*DO?35*")
-		(path "/044dac97-8102-428a-ba4f-c5c07fb138bc")
-		(sheetname "/")
-		(sheetfile "Neewer.kicad_sch")
-		(attr through_hole)
-		(fp_line
-			(start 1.213629 0)
-			(end 1.1 0)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(layer "F.SilkS")
-			(uuid "78f8762a-1c54-4cd2-8a0d-ba675a1c3a8e")
-		)
-		(fp_circle
-			(center 2.54 0)
-			(end 3.866371 0)
-			(stroke
-				(width 0.12)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.SilkS")
-			(uuid "7936988d-a526-47d9-96d7-2582b1460e40")
-		)
-		(fp_rect
-			(start -1.05 -1.25)
-			(end 3.79 1.25)
-			(stroke
-				(width 0.05)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.CrtYd")
-			(uuid "fb0110bc-1d1a-4db5-92d8-9ff290c02765")
-		)
-		(fp_line
-			(start 0 0)
-			(end 2.54 0)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(layer "F.Fab")
-			(uuid "7ad99f80-30a6-41a0-a144-afc31190b5d1")
-		)
-		(fp_circle
-			(center 2.54 0)
-			(end 3.54 0)
-			(stroke
-				(width 0.1)
-				(type solid)
-			)
-			(fill no)
-			(layer "F.Fab")
-			(uuid "615684bb-cc23-48d8-baaa-5e09e9338796")
-		)
-		(fp_text user "K"
-			(at -1.8 0 0)
-			(layer "F.SilkS")
-			(uuid "69a85e25-4dd1-432e-9549-e82d85ca58bd")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(fp_text user "${REFERENCE}"
-			(at 1.27 -2.326371 0)
-			(layer "F.Fab")
-			(uuid "07eb1d63-4f5b-417b-9ec2-99746e2de990")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(fp_text user "K"
-			(at -1.8 0 0)
-			(layer "F.Fab")
-			(uuid "0cb2f57c-38eb-4cfb-9ec4-6391ffc93b70")
-			(effects
-				(font
-					(size 1 1)
-					(thickness 0.15)
-				)
-			)
-		)
-		(pad "1" thru_hole roundrect
-			(at 0 0)
-			(size 1.6 1.6)
-			(drill 0.8)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(roundrect_rratio 0.15625)
-			(net 28 "VCC")
-			(pinfunction "K")
-			(pintype "passive")
-			(uuid "9a9e8ab0-2c9a-4057-9a6b-1efd2986a978")
-		)
-		(pad "2" thru_hole circle
-			(at 2.54 0)
-			(size 1.6 1.6)
-			(drill 0.8)
-			(layers "*.Cu" "*.Mask")
-			(remove_unused_layers no)
-			(net 34 "PWM4")
-			(pinfunction "A")
-			(pintype "passive")
-			(uuid "824e9086-7d21-4455-b530-2cfd16fec42f")
-		)
-		(embedded_fonts no)
-		(model "${KICAD9_3DMODEL_DIR}/Diode_THT.3dshapes/D_DO-35_SOD27_P2.54mm_Vertical_KathodeUp.step"
-			(offset
-				(xyz 0 0 0)
-			)
-			(scale
-				(xyz 1 1 1)
-			)
-			(rotate
-				(xyz 0 0 0)
-			)
-		)
-	)
 	(footprint "Package_TO_SOT_THT:TO-220-3_Vertical"
 		(layer "F.Cu")
 		(uuid "cc8d1ff4-4f5a-4d94-ba0a-776a3640941c")
@@ -6045,6 +6045,7 @@
 		(property "Reference" "Q1"
 			(at 2.54 -5.08 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "bdae0b3f-746f-4488-95e0-4b5be7579f90")
 			(effects
 				(font
@@ -6275,7 +6276,7 @@
 	(footprint "Capacitor_THT:CP_Radial_D13.0mm_P5.00mm"
 		(layer "F.Cu")
 		(uuid "d91ef0fc-4367-4214-b380-f523c57cf650")
-		(at 50.8 63.5)
+		(at 50.8 60.96)
 		(descr "CP, Radial series, Radial, pin pitch=5.00mm, diameter=13mm, height=20mm, Electrolytic Capacitor")
 		(tags "CP Radial series Radial pin pitch 5.00mm diameter 13mm height 20mm Electrolytic Capacitor")
 		(property "Reference" "C6"
@@ -9278,6 +9279,14 @@
 		(uuid "25d6d525-987b-49c6-8580-42fa97f21e0f")
 	)
 	(segment
+		(start 55.8 76.2)
+		(end 55.8 60.96)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 1)
+		(uuid "2cbba882-95bd-4955-9ca9-8b7c6c81e164")
+	)
+	(segment
 		(start 66.04 76.2)
 		(end 68.58 78.74)
 		(width 0.2)
@@ -9782,20 +9791,28 @@
 		(uuid "fb39c25d-192a-418a-b603-37a7e48b7474")
 	)
 	(segment
-		(start 114.3 53.34)
-		(end 111.76 53.34)
+		(start 111.76 53.34)
+		(end 111.76 48.26)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 28)
-		(uuid "0d5d8528-98f8-4f3c-9e32-fdc93104f915")
+		(uuid "074f200d-3c64-4e93-970c-4fd14da11a53")
 	)
 	(segment
-		(start 86.36 53.34)
-		(end 88.9 53.34)
+		(start 50.8 60.96)
+		(end 50.8 48.26)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 28)
-		(uuid "1fea3073-d1c0-49a4-84b0-fc716d052589")
+		(uuid "24a369cb-2f8d-4226-ab6c-22703102bfe7")
+	)
+	(segment
+		(start 50.8 76.2)
+		(end 50.8 60.96)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 28)
+		(uuid "3bf2006a-4b39-4ed2-9dda-fdbffaa53ff1")
 	)
 	(segment
 		(start 86.44 50.72)
@@ -9806,20 +9823,12 @@
 		(uuid "486cf667-b897-449c-a1ed-6739e4e049c7")
 	)
 	(segment
-		(start 50.8 63.5)
-		(end 50.8 50.8)
+		(start 86.36 53.34)
+		(end 86.36 50.8)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 28)
-		(uuid "4d2a5956-8b8f-4513-b43c-6ff19023d39a")
-	)
-	(segment
-		(start 111.76 53.34)
-		(end 111.76 48.26)
-		(width 0.2)
-		(layer "B.Cu")
-		(net 28)
-		(uuid "5070611e-466c-4e2b-a5b9-2096c30035c7")
+		(uuid "513b9c8b-7547-4e35-88a5-74fdcdb6c6d7")
 	)
 	(segment
 		(start 86.44 43.0475)
@@ -9828,6 +9837,14 @@
 		(layer "B.Cu")
 		(net 28)
 		(uuid "54609252-c118-4487-906f-ecd66c0dc9cd")
+	)
+	(segment
+		(start 88.9 53.34)
+		(end 86.36 53.34)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 28)
+		(uuid "550d5f88-e754-480c-9017-3388f05faf5e")
 	)
 	(segment
 		(start 50.8 50.8)
@@ -9846,20 +9863,20 @@
 		(uuid "94c63f38-83ea-4a4f-90d3-340dc426cadd")
 	)
 	(segment
-		(start 86.36 50.8)
-		(end 86.36 53.34)
-		(width 0.2)
-		(layer "B.Cu")
-		(net 28)
-		(uuid "97224b1c-3ecb-4b1f-a20b-0e2805e7e486")
-	)
-	(segment
 		(start 111.76 48.26)
 		(end 111.76 43.0475)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 28)
 		(uuid "d2b9d78b-31f2-47b9-be8b-aa36d12dc98e")
+	)
+	(segment
+		(start 114.3 53.34)
+		(end 111.76 53.34)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 28)
+		(uuid "e60c9af4-e96a-4017-b06a-8bc00045c936")
 	)
 	(segment
 		(start 50.8 76.2)
@@ -9894,36 +9911,20 @@
 		(uuid "ec203a6c-de58-4cea-8bb2-09535d24c13d")
 	)
 	(segment
-		(start 81.28 53.34)
-		(end 81.28 43.2075)
-		(width 0.2)
-		(layer "B.Cu")
-		(net 30)
-		(uuid "0195af09-c875-42a9-b65a-dfa6f2339231")
-	)
-	(segment
-		(start 83.82 53.34)
-		(end 81.28 53.34)
-		(width 0.2)
-		(layer "B.Cu")
-		(net 30)
-		(uuid "56d71a3d-181f-4d00-a287-7ff2299d0fa3")
-	)
-	(segment
-		(start 81.28 60.96)
-		(end 81.28 53.34)
-		(width 0.2)
-		(layer "B.Cu")
-		(net 30)
-		(uuid "d091b296-6e4f-4a0c-8979-1c215932d359")
-	)
-	(segment
 		(start 81.28 43.2075)
 		(end 81.44 43.0475)
 		(width 0.2)
 		(layer "B.Cu")
 		(net 30)
-		(uuid "e1947d87-8408-402a-a0d7-8aadacee9aa3")
+		(uuid "be8bde7d-4bee-42ec-976b-569e1dbe9819")
+	)
+	(segment
+		(start 81.28 60.96)
+		(end 81.28 43.2075)
+		(width 0.2)
+		(layer "B.Cu")
+		(net 30)
+		(uuid "e0d4c5f3-272f-45dd-8779-9113f5c3b25a")
 	)
 	(segment
 		(start 93.98 43.18)
@@ -9942,14 +9943,6 @@
 		(uuid "4d48b4f4-b2b3-4a8e-b4d6-e18dae30a424")
 	)
 	(segment
-		(start 91.44 53.34)
-		(end 93.98 53.34)
-		(width 0.2)
-		(layer "B.Cu")
-		(net 31)
-		(uuid "54db5cb2-fbdc-4b70-989b-6fc33fc490b8")
-	)
-	(segment
 		(start 93.8475 43.0475)
 		(end 91.44 43.0475)
 		(width 0.2)
@@ -9964,14 +9957,6 @@
 		(layer "B.Cu")
 		(net 31)
 		(uuid "e8170aff-ccf2-4789-bf56-736695740184")
-	)
-	(segment
-		(start 109.22 53.34)
-		(end 106.68 53.34)
-		(width 0.2)
-		(layer "B.Cu")
-		(net 32)
-		(uuid "779a436e-6513-4d43-81bd-475c0d4792ab")
 	)
 	(segment
 		(start 106.68 60.96)
@@ -10020,14 +10005,6 @@
 		(layer "B.Cu")
 		(net 34)
 		(uuid "20ba5eef-c24c-4b39-ae12-53ca23b9176c")
-	)
-	(segment
-		(start 116.84 53.34)
-		(end 119.38 53.34)
-		(width 0.2)
-		(layer "B.Cu")
-		(net 34)
-		(uuid "aed34c60-7891-4184-86cb-13015bd2f7c6")
 	)
 	(segment
 		(start 119.2475 43.0475)
