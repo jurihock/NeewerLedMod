@@ -35,3 +35,7 @@ Homemade Arduino Nano based driver for the [Neewer BP300](https://neewer.com/pro
 | G     | 470      |
 | R     | 2k       |
 | B     | 10k      |
+
+### Fuses
+
+- 2x3A slow or fast
