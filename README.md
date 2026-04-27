@@ -2,6 +2,22 @@
 
 Homemade Arduino Nano based driver for the [Neewer BP300](https://neewer.com/products/neewer-bp300-2-pack-led-video-light-panel-lighting-kit-66606584) LED panel.
 
+## Features
+
+- Single controller to sync two LED panels
+- Color balance between cool and warm
+- Brightness balance between two panels
+- Total brightness adjustment
+
+## Implementation
+
+- Basically PWM using IRLZ44N logic-level MOSFET
+- Utilizing timers 1 and 2 of the [ATmega328](https://en.wikipedia.org/wiki/ATmega328) chip to generate 2x2 PWM signals up to ~60kHz common frequency and individual duty cycles
+
+### See also
+
+- [The MOSFET as Switch](https://wolles-elektronikkiste.de/en/the-mosfet-as-switch)
+
 ## Details
 
 ### PSU
