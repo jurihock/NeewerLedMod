@@ -1,30 +1,38 @@
 #include <avr/io.h>
 #include <util/atomic.h>
 
-const char GRB[3] = { 'G', 'R', 'B' }; // wire color codes
+const char GRB[3]        { 'G', 'R', 'B' }; // wire color codes
 
-const float TRIGGER[3] = { 0.f, 0.5f, 0.5f }; // G, R, B
+const float TRIGGER[3]   { 0.f, 0.5f, 0.5f }; // G, R, B
 
-const uint8_t POT[3] = { A0, A1, A2 }; // G, R, B
-const uint8_t LED[3] = {  5,  6,  7 }; // G, R, B
+const uint8_t POT[3]     { A0, A1, A2 }; // G, R, B
+const uint8_t LED[3]     {  5,  6,  7 }; // G, R, B
 
-const uint8_t COLOR      = 1; // R
-const uint8_t BALANCE    = 0; // G
-const uint8_t BRIGHTNESS = 2; // B
+const uint8_t BALANCE    { 0 }; // G
+const uint8_t COLOR      { 1 }; // R
+const uint8_t BRIGHTNESS { 2 }; // B
 
-const bool DEBUG = false; // enables serial output
-const bool SLOW  = false; // true: ~30kHz, false: ~60kHz
+#define DEBUG            false // enables serial output
+#define SLOW             false // true: ~30kHz, false: ~60kHz
+#define ALIGN            true  // force PWM outputs to go LOW at the boundary
+
+#if SLOW && ALIGN
+#error SLOW and ALIGN are incompatible!
+#endif
 
 struct Reading
 {
-  float filt    {-1};
-  int   step    {-1};
-  bool  changed {false};
-  float value   {-1};
+  float filt    {    -1 };
+  int   step    {    -1 };
+  float value   {    -1 };
+  bool  changed { false };
 };
 
 void setup_pwm()
 {
+  // halt timers and reset prescalers so they can start together
+  GTCCR = _BV(TSM) | _BV(PSRSYNC) | _BV(PSRASY);
+  
   DDRB = 0;
   DDRD = 0;
 
@@ -56,6 +64,12 @@ void setup_pwm()
   TCCR1A |= _BV(COM1A1) | _BV(COM1B1);
   TCCR2A |= _BV(COM2A1) | _BV(COM2B1);
 
+  if (ALIGN)
+  {
+    TCCR1A |= _BV(COM1A0) | _BV(COM1B0);
+    TCCR2A |= _BV(COM2A0) | _BV(COM2B0);
+  }
+
   TCCR1B |= _BV(CS10);
   TCCR2B |= _BV(CS20);
 
@@ -65,7 +79,10 @@ void setup_pwm()
   OCR2B = 0;
 
   TCNT1 = 0;
-  TCNT2 = 2;
+  TCNT2 = 0;
+
+  // start all timers simultaneously
+  GTCCR = 0;
 }
 
 void setup_pot()
@@ -141,10 +158,18 @@ void read(uint8_t pot, Reading& reading)
 
 void write(float duty1, float duty2, float duty3, float duty4)
 {
-  const uint8_t a = constrain(duty1 * 0xFF, 0, 0xFF);
-  const uint8_t b = constrain(duty2 * 0xFF, 0, 0xFF);
-  const uint8_t c = constrain(duty3 * 0xFF, 0, 0xFF);
-  const uint8_t d = constrain(duty4 * 0xFF, 0, 0xFF);
+  uint8_t a = constrain(duty1 * 0xFF, 0, 0xFF);
+  uint8_t b = constrain(duty2 * 0xFF, 0, 0xFF);
+  uint8_t c = constrain(duty3 * 0xFF, 0, 0xFF);
+  uint8_t d = constrain(duty4 * 0xFF, 0, 0xFF);
+
+  if (ALIGN)
+  {
+    a = 0xFF - a;
+    b = 0xFF - b;
+    c = 0xFF - c;
+    d = 0xFF - d;
+  }
   
   ATOMIC_BLOCK(ATOMIC_RESTORESTATE)
   {
@@ -159,7 +184,7 @@ void loop()
 {
   const unsigned long tic = micros();
   
-  static Reading READINGS[3]{};
+  static Reading READINGS[3] {};
 
   for (uint8_t i = 0; i < 3; ++i)
   {
@@ -184,18 +209,18 @@ void loop()
 
   if (balance < 0)
   {
-    float f = 1.f - abs(balance);
+    const float f = 1.f - abs(balance);
 
-    c *= f;
-    d *= f;
+    a *= f;
+    b *= f;
   }
 
   if (balance > 0)
   {
-    float f = 1.f - abs(balance);
+    const float f = 1.f - abs(balance);
 
-    a *= f;
-    b *= f;
+    c *= f;
+    d *= f;
   }
 
   write(a, b, c, d);
