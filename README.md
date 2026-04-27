@@ -6,12 +6,12 @@ Homemade Arduino Nano based driver for the [Neewer BP300](https://neewer.com/pro
 
 - Single controller to sync two LED panels
 - Color balance between cool and warm
-- Brightness balance between two panels
+- Brightness balance between two LED panels
 - Total brightness adjustment
 
 ## Implementation
 
-- Basically PWM using IRLZ44N logic-level MOSFET
+- Basically PWM in combination with the IRLZ44N logic-level MOSFET
 - Utilizing timers 1 and 2 of the [ATmega328](https://en.wikipedia.org/wiki/ATmega328) chip to generate 2x2 PWM signals up to ~60kHz common frequency and individual duty cycles
 
 ### See also
