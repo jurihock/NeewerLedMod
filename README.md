@@ -25,6 +25,7 @@ Homemade Arduino Nano based driver for the [Neewer BP300](https://neewer.com/pro
 - [LEICKE ULL 5V 8A](https://www.leicke.de/shop-artikel/buero/leicke-ull-netzteil-40w-5v-8a_106522_67199) or [6A](https://www.leicke.de/shop-artikel/buero/leicke-ull-netzteil-30w-5v-6a_106544_67223)
 - Connector 5.5x2.5mm (+)
 - Actually 5.5V **not** 5.0V output voltage
+- Audible noise below 7W load
 - [Meanwell GST60A05-P1J 5V 6A](https://www.welectron.com/Meanwell-GST60A05-P1J-Desktop-Power-Supply-5V-6A) as possible alternative
 
 ### MCU
@@ -64,6 +65,6 @@ Homemade Arduino Nano based driver for the [Neewer BP300](https://neewer.com/pro
 
 - [TEKO 362](https://www.teko.it/en/products/family/PU/series/pult-36) or similar
 
-### How it looks like
+## How it looks like
 
 ![](assets/Housing.jpg)
