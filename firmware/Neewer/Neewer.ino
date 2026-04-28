@@ -5,8 +5,8 @@ const char GRB[3]        { 'G', 'R', 'B' }; // wire color codes
 
 const float TRIGGER[3]   { 0.f, 0.5f, 0.5f }; // G, R, B
 
-const uint8_t POT[3]     { A0, A1, A2 }; // G, R, B
 const uint8_t LED[3]     {  5,  6,  7 }; // G, R, B
+const uint8_t POT[3]     { A0, A1, A2 }; // G, R, B
 
 const uint8_t BALANCE    { 0 }; // G
 const uint8_t COLOR      { 1 }; // R
@@ -22,11 +22,29 @@ const uint8_t BRIGHTNESS { 2 }; // B
 
 struct Reading
 {
-  float filt    {    -1 };
-  int   step    {    -1 };
-  float value   {    -1 };
+  float filt    { -1    };
+  int   step    { -1    };
+  float value   { -1    };
   bool  changed { false };
 };
+
+void setup_led()
+{
+  pinMode(LED[0], OUTPUT);
+  pinMode(LED[1], OUTPUT);
+  pinMode(LED[2], OUTPUT);
+
+  digitalWrite(LED[0], LOW);
+  digitalWrite(LED[1], LOW);
+  digitalWrite(LED[2], LOW);
+}
+
+void setup_pot()
+{ 
+  pinMode(POT[0], INPUT);
+  pinMode(POT[1], INPUT);
+  pinMode(POT[2], INPUT);
+}
 
 void setup_pwm()
 {
@@ -73,10 +91,20 @@ void setup_pwm()
   TCCR1B |= _BV(CS10);
   TCCR2B |= _BV(CS20);
 
-  OCR1A = 0;
-  OCR1B = 0;
-  OCR2A = 0;
-  OCR2B = 0;
+  if (ALIGN)
+  {
+    OCR1A = 0xFF;
+    OCR1B = 0xFF;
+    OCR2A = 0xFF;
+    OCR2B = 0xFF;
+  }
+  else
+  {
+    OCR1A = 0;
+    OCR1B = 0;
+    OCR2A = 0;
+    OCR2B = 0;
+  }
 
   TCNT1 = 0;
   TCNT2 = 0;
@@ -85,33 +113,15 @@ void setup_pwm()
   GTCCR = 0;
 }
 
-void setup_pot()
-{ 
-  pinMode(POT[0], INPUT);
-  pinMode(POT[1], INPUT);
-  pinMode(POT[2], INPUT);
-}
-
-void setup_led()
-{
-  pinMode(LED[0], OUTPUT);
-  pinMode(LED[1], OUTPUT);
-  pinMode(LED[2], OUTPUT);
-
-  digitalWrite(LED[0], LOW);
-  digitalWrite(LED[1], LOW);
-  digitalWrite(LED[2], LOW);
-}
-
 void setup()
 {
-  noInterrupts();
+  // noInterrupts();
 
-  setup_pwm();
-  setup_pot();
   setup_led();
+  setup_pot();
+  setup_pwm();
 
-  interrupts();
+  // interrupts();
 
   if (DEBUG)
   {
@@ -186,6 +196,8 @@ void loop()
   
   static Reading READINGS[3] {};
 
+  static bool RAMP { true };
+
   for (uint8_t i = 0; i < 3; ++i)
   {
     read(i, READINGS[i]);
@@ -223,7 +235,10 @@ void loop()
     d *= f;
   }
 
-  write(a, b, c, d);
+  if (!RAMP)
+  {
+    write(a, b, c, d);
+  }
 
   for (uint8_t i = 0; i < 3; ++i)
   {
@@ -241,6 +256,19 @@ void loop()
     {
       digitalWrite(LED[i], LOW);
     }
+  }
+
+  if (RAMP)
+  {
+    for (float f = 0.f; f < 1.f; f += 0.01f)
+    {
+      write(a * f, b * f, c * f, d * f);
+      delay(10);
+    }
+
+    write(a, b, c, d);
+
+    RAMP = false;
   }
 
   if (DEBUG)
