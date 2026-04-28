@@ -63,3 +63,7 @@ Homemade Arduino Nano based driver for the [Neewer BP300](https://neewer.com/pro
 ### Housing
 
 - [TEKO 362](https://www.teko.it/en/products/family/PU/series/pult-36) or similar
+
+### How it looks like
+
+![](Assets/Housing.jpg)
