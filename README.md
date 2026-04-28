@@ -66,4 +66,4 @@ Homemade Arduino Nano based driver for the [Neewer BP300](https://neewer.com/pro
 
 ### How it looks like
 
-![](Assets/Housing.jpg)
+![](assets/Housing.jpg)
