@@ -26,7 +26,7 @@ Homemade Arduino Nano based driver for the [Neewer BP300](https://neewer.com/pro
 - Connector 5.5x2.5mm (+)
 - Actually 5.5V **not** 5.0V output voltage
 - Audible noise below 7W load
-- [Meanwell GST60A05-P1J 5V 6A](https://www.welectron.com/Meanwell-GST60A05-P1J-Desktop-Power-Supply-5V-6A) as possible alternative
+- [Meanwell GST60A05-P1J 5V 6A](https://www.welectron.com/Meanwell-GST60A05-P1J-Desktop-Power-Supply-5V-6A) or [medical](https://www.reichelt.de/de/de/shop/produkt/steckernetzteil_30_w_5_v_6_a_medical-386168) as possible alternative
 
 ### MCU
 
