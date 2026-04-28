@@ -115,13 +115,9 @@ void setup_pwm()
 
 void setup()
 {
-  // noInterrupts();
-
-  setup_led();
-  setup_pot();
   setup_pwm();
-
-  // interrupts();
+  setup_pot();
+  setup_led();
 
   if (DEBUG)
   {
